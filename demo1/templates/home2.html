@@ -25,19 +25,6 @@
       font-weight: bold;
     }
 
-    .nav-buttons button {
-      background-color: red;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      margin-left: 10px;
-      cursor: pointer;
-    }
-
-    .nav-buttons button:hover {
-      background-color: darkred;
-    }
-
     /* CATEGORY SECTION */
     .categories {
       text-align: center;
@@ -123,11 +110,9 @@
   <!-- NAVIGATION -->
   <header>
     <div class="logo">Welcome to RKFashions</div>
-   <div class="nav-buttons">
-    <button onclick="window.location.href='/signin/'" class="btn">Login</button>
-    <button onclick="window.location.href='/register/'" class="btn">Register</button>
-</div>
-
+    <div>
+    <button onclick="window.location.href='/signin/'" class="btn">LogOut</button>
+  </div>
   </header>
 
   <!-- CATEGORIES -->
@@ -137,37 +122,6 @@
     <button onclick="window.location.href='/womens/'">Women</button>
     <button onclick="window.location.href='/kids/'">Kids</button>
   </section>
-
-  <!-- CLOTHES LIST -->
-  <div id="men" class="clothes-list">
-    <h3>Men's Fashion</h3>
-    <ul>
-      <li>Men's Shirt</li>
-      <li>Men's Jeans</li>
-      <li>Men's Jacket</li>
-      <li>Men's T-Shirts</li>
-    </ul>
-  </div>
-
-  <div id="women" class="clothes-list">
-    <h3>Women's Fashion</h3>
-    <ul>
-      <li>Women's Saree</li>
-      <li>Women's Tops</li>
-      <li>Women's Dress</li>
-      <li>Women's Kurti</li>
-    </ul>
-  </div>
-
-  <div id="kids" class="clothes-list">
-    <h3>Kids' Fashion</h3>
-    <ul>
-      <li>Kids' T-Shirts</li>
-      <li>Kids' Shorts</li>
-      <li>Kids' Dresses</li>
-      <li>Kids' Jackets</li>
-    </ul>
-  </div>
 
   <!-- ABOUT SECTION -->
   <section class="about">
@@ -183,3 +137,4 @@
 
 </body>
 </html>
+

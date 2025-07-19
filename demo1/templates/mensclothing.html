@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RK Fashions - Men's Fashion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* NAVIGATION BAR */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-buttons button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .nav-buttons button:hover {
+      background-color: darkred;
+    }
+
+    /* PRODUCT SECTION */
+    h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 0 20px 40px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #222;
+    }
+
+    .product-card p {
+      color: #555;
+    }
+
+    .product-card button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: darkred;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      background-color: #fff;
+      padding: 40px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .about h2 {
+      color: #333;
+    }
+
+    .about p {
+      font-size: 16px;
+      color: #555;
+      margin: 10px auto;
+      max-width: 600px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #000;
+      color: red;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="logo">RkFashions</div>
+    <div class="nav-buttons">
+    <div>
+    <button onclick="window.location.href='/mens/'"class="btn">Men</button>
+    <button onclick="window.location.href='/womens/'"class="btn">Women</button>
+    <button onclick="window.location.href='/kids/'" class="btn">Kids</button>
+    <button onclick="window.location.href='/signin/'" class="btn">LogOut</button>
+  </div>
+  </header>
+
+  <!-- MEN'S PRODUCTS -->
+  <h2>Men's Fashion</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://krisandjohn.in/cdn/shop/files/4_59060368-6d01-4a2e-9ea1-5fcfa7df3a07.jpg?v=1752843008&width=1200" alt="Men Shirt">
+      <h3>Formal Shirt</h3>
+      <p>Price: ₹999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/300/300/xif0q/t-shirt/b/y/l/xxl-ausk-pck2-peacocok-black-navy-yellow-xxl-r-ridachy-original-imahf2kjjngnhzzb.jpeg" alt="T-Shirt">
+      <h3>Casual T-Shirt</h3>
+      <p>Price: ₹499</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://metalhawk.in/cdn/shop/products/MHMJN13422_2.jpg?v=1661461270" alt="Jeans">
+      <h3>Denim Jeans</h3>
+      <p>Price: ₹1299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://cdn.media.amplience.net/i/duluthtrading/101524_DUL_CO_FW24_Mens-Jackets-Water_GST?fmt=auto&qlt=70" alt="Jacket">
+      <h3>Winter Jacket</h3>
+      <p>Price: ₹1999</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+  
+
+  <!-- ABOUT RK FASHIONS -->
+  <section class="about">
+    <h2>Why RK Fashions?</h2>
+    <p>At RK Fashions, we offer premium fashion for men, women, and kids. With quality fabric, trending designs, and affordable prices, RK Fashions is your one-stop style destination.</p>
+    <p><strong>Address:</strong> RK Fashions, 123 Fashion Street, Bengaluru, Karnataka - 560001</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Register @ RK Fashions
+  </footer>
+
+</body>
+</html>

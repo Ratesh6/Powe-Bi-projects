@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - E-Commerce</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      width: 350px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(179,0,0,0.15);
+    }
+
+    h2 {
+      color: #ff2a2a;
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ff2a2a;
+      border-radius: 6px;
+      font-size: 15px;
+      background: #181818;
+      color: #fff;
+      transition: border 0.2s;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border: 2px solid #ff2a2a;
+      outline: none;
+      background: #222;
+    }
+
+    button {
+      background: linear-gradient(90deg, #ff2a2a 0%, #b30000 100%);
+      color: #fff;
+      padding: 13px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 15px;
+      box-shadow: 0 2px 8px rgba(179,0,0,0.15);
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #b30000 0%, #ff2a2a 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+
+    .error {
+      color: #ff2a2a;
+      margin-top: 10px;
+      font-size: 14px;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Yx1LA9bcUQ7pLn0IHXrEWlPDCYVPJxB7Kg&s" alt="E-Commerce Logo" class="logo" />
+    <h2>Login To RkFashions</h2>
+    <form id="loginForm" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="button" onclick="window.location.href='/home2/'">Login</button>
+      <div class="error" id="errorMsg"></div>
+      <div class="login-link">
+      Not Registered yet? <a href="/register/">Register here</a>
+    </div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorMsg = document.getElementById('errorMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Dummy validation
+      if (username === "admin" && password === "1234") {
+        alert("Login successful!");
+        // Redirect or proceed
+      } else {
+        errorMsg.textContent = "Invalid username or password.";
+      }
+    });
+  </script>
+
+</body>
+</html>

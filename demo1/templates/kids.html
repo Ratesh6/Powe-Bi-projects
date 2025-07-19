@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RK Fashions - Kids' Fashion</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* NAVIGATION BAR */
+    header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-buttons button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .nav-buttons button:hover {
+      background-color: darkred;
+    }
+
+    /* PRODUCT SECTION */
+    h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+      color: #333;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 0 20px 40px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #222;
+    }
+
+    .product-card p {
+      color: #555;
+    }
+
+    .product-card button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: darkred;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      background-color: #fff;
+      padding: 40px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .about h2 {
+      color: #333;
+    }
+
+    .about p {
+      font-size: 16px;
+      color: #555;
+      margin: 10px auto;
+      max-width: 600px;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #000;
+      color: red;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="logo">RkFashions</div>
+    <div class="nav-buttons">
+    <div>
+    <button onclick="window.location.href='/mens/'"class="btn">Men</button>
+    <button onclick="window.location.href='/womens/'"class="btn">Women</button>
+    <button onclick="window.location.href='/kids/'" class="btn">Kids</button>
+    <button onclick="window.location.href='/signin/'" class="btn">LogOut</button>
+  </div>
+  </header>
+
+  <!-- KIDS PRODUCTS -->
+  <h2>Kids' Fashion</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81N+tvXT2ML._UY1100_.jpg" alt="Kids T-Shirt">
+      <h3>Kids T-Shirt</h3>
+      <p>Price: ₹399</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://media.landmarkshops.in/cdn-cgi/image/h=730,w=540,q=85,fit=cover/max-new/1000014019797-Multi-MULTI-1000014019797_01-2100.jpg" alt="Kids Shorts">
+      <h3>Kids Shorts</h3>
+      <p>Price: ₹299</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://siricollections.in/cdn/shop/products/KID1002_1080x1080.jpg?v=1678515868" alt="Kids Frock">
+      <h3>Kids Frock</h3>
+      <p>Price: ₹799</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/51pr1vxuGZL._UY1100_.jpg" alt="Kids Jacket">
+      <h3>Kids Jacket</h3>
+      <p>Price: ₹999</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.pinimg.com/originals/c9/f5/6b/c9f56b1f42a094174d80ba83fb779061.jpg" alt="Kids Ethnic Wear">
+      <h3>Kids Ethnic Set</h3>
+      <p>Price: ₹1199</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="https://image.made-in-china.com/2f0j00EoJbylHPfwqQ/Esman-Contrast-Color-New-Style-Fashion-Kids-Branded-Shoes-Boys-Sneakers.webp" alt="Kids Dungaree">
+      <h3>Kids Shoes</h3>
+      <p>Price: ₹699</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq56hdiojDDpt2A6xyPKK5QjZo8adIg-kl3Q&s" alt="Kids Dungaree">
+      <h3>Kids Shoes</h3>
+      <p>Price: ₹699</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeTg2DvDaNC_rp7xC6Ih5UXyFnDhm1PGKkdg&s" alt="Kids Dungaree">
+      <h3>Kids Shoes</h3>
+      <p>Price: ₹699</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- ABOUT RK FASHIONS -->
+  <section class="about">
+    <h2>Why RK Fashions?</h2>
+    <p>RK Fashions offers cute and comfy outfits for kids that are perfect for every season and occasion. We blend style and softness for your little ones.</p>
+    <p><strong>Address:</strong> RK Fashions, 123 Fashion Street, Bengaluru, Karnataka - 560001</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Register @ RK Fashions
+  </footer>
+
+</body>
+</html>
